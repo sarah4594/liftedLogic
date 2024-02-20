@@ -16,6 +16,7 @@ export default {
 				light: "#f6f6f6",
 			},
 			black: "#000000",
+			white: "#ffffff",
 		},
 		extend: {},
 	},

@@ -1,7 +1,7 @@
 <template>
 	<div
 		id="nav"
-		className="sticky top-0 flex justify-between p-10 uppercase text-blue"
+		class="sticky top-0 flex justify-between px-10 py-6 uppercase text-blue bg-white shadow-md z-50"
 	>
 		<div>
 			<img src="/Logos/Logo-Blue.svg" alt="Logo-Blue" />

@@ -1,7 +1,7 @@
 <template>
 	<div
 		id="nav"
-		className="sticky top-0 flex justify-between m-10 uppercase text-blue"
+		className="sticky top-0 flex justify-between p-10 uppercase text-blue"
 	>
 		<div>
 			<img src="/Logos/Logo-Blue.svg" alt="Logo-Blue" />
@@ -27,7 +27,7 @@
 			<p class="text-md px-2">Concerts</p>
 		</router-link>
 		<router-link to="/signup">
-			<button class="bg-green-light text-green py-2 px-8 rounded">
+			<button class="bg-green-light text-green py-2 px-12 rounded">
 				Sign Up
 			</button></router-link
 		>

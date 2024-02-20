@@ -18,11 +18,3 @@
 3. Use of javascript libraries to assist with functionality is okay (e.g. Slick Carousel, Magnific popup, jQuery )
 4. The layout should be responsive. You can be creative and use your best judgment when determining the layout as the screen size becomes smaller.
 5. Forms do not need to validate or submit. But client-side validation is cool.
-
-```bash
-./setup
-```
-
-```bash
-./start
-```

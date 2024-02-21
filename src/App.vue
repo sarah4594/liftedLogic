@@ -2,7 +2,7 @@
 import Header from "./components/Header.vue";
 import HeroImage from "./components/HeroImage.vue";
 import MainContent from "./components/MainContent.vue";
-// import NewReleases from "./components/NewReleases.vue";
+import NewReleases from "./components/NewReleases.vue";
 // import Map from "./components/Map.vue";
 // import ContactForm from "./components/ContactForm.vue";
 // import Footer from "./components/Footer.vue";
@@ -12,7 +12,7 @@ import MainContent from "./components/MainContent.vue";
 	<Header />
 	<HeroImage />
 	<MainContent />
-	<!-- <NewReleases /> -->
+	<NewReleases />
 	<!-- <Map /> -->
 	<!-- <ContactForm /> -->
 	<!-- <Footer /> -->

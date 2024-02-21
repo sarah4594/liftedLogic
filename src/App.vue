@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Header from "./components/Header.vue";
-// import HeroImage from "./components/HeroImage.vue";
+import HeroImage from "./components/HeroImage.vue";
 // import MainContent from "./components/MainContent.vue";
 // import NewReleases from "./components/NewReleases.vue";
 // import Map from "./components/Map.vue";
@@ -10,10 +10,10 @@ import Header from "./components/Header.vue";
 
 <template>
 	<Header />
-	<!-- <HeroImage />
-	<MainContent />
-	<NewReleases />
-	<Map />
-	<ContactForm />
-	<Footer /> -->
+	<HeroImage />
+	<!-- <MainContent /> -->
+	<!-- <NewReleases /> -->
+	<!-- <Map /> -->
+	<!-- <ContactForm /> -->
+	<!-- <Footer /> -->
 </template>

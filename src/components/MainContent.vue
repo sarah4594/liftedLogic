@@ -1,5 +1,5 @@
 <template>
-	<div class="flex pt-32">
+	<div class="flex pt-32 bg-white">
 		<div class="basis-1/2 py-12 pl-12 pr-8">
 			<img
 				class="max-h-[454px] max-w-[568px]"

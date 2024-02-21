@@ -5,7 +5,7 @@ import MainContent from "./components/MainContent.vue";
 import NewReleases from "./components/NewReleases.vue";
 // import Map from "./components/Map.vue";
 // import ContactForm from "./components/ContactForm.vue";
-// import Footer from "./components/Footer.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -15,5 +15,5 @@ import NewReleases from "./components/NewReleases.vue";
 	<NewReleases />
 	<!-- <Map /> -->
 	<!-- <ContactForm /> -->
-	<!-- <Footer /> -->
+	<Footer />
 </template>

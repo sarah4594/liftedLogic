@@ -24,6 +24,20 @@
 				from music critics. On January 26, 2017, Sonder released their debut EP
 				Into.
 			</p>
+			<div class="mt-8">
+				<Button>Learn More</Button>
+			</div>
 		</div>
 	</div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import Button from "./ui/Button.vue";
+export default defineComponent({
+	name: "MainContent",
+	components: {
+		Button,
+	},
+});
+</script>

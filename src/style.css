@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel__slide--active .opacity-40 {
+	opacity: 1 !important;
+}

@@ -4,7 +4,7 @@ import HeroImage from "./components/HeroImage.vue";
 import MainContent from "./components/MainContent.vue";
 import NewReleases from "./components/NewReleases.vue";
 import Map from "./components/Map.vue";
-// import ContactForm from "./components/ContactForm.vue";
+import ContactForm from "./components/ContactForm.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -14,6 +14,6 @@ import Footer from "./components/Footer.vue";
 	<MainContent />
 	<NewReleases />
 	<Map />
-	<!-- <ContactForm /> -->
+	<ContactForm />
 	<Footer />
 </template>

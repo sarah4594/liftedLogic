@@ -1,18 +1,20 @@
 <template>
 	<footer class="bg-blue" aria-labelledby="footer-heading">
 		<h2 id="footer-heading" class="sr-only">Footer</h2>
-		<div class="max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-12 lg:pt-32">
+		<div class="px-12 pt-16 pb-8">
 			<div class="xl:grid xl:grid-cols-5 xl:gap-8">
-				<div class="grid gap-8 xl:col-span-1 pr-10">
+				<div class="grid gap-8 pr-10 xl:col-span-1">
 					<div class="flex flex-col text-white">
 						<img src="/Logos/Logo-White.svg" alt="Logo-white" />
-						<p class="pt-9 tracking-wider">8521 W Fairfax Rd Los Angeles, CA</p>
-						<p class="pt-6 tracking-wider">990210 (909) 505 4302</p>
+						<p class="pt-6 tracking-wider">
+							8521 W Fairfax Rd Los Angeles, CA 90210
+						</p>
+						<p class="pt-6 tracking-wider">(909) 505 4302</p>
 					</div>
 				</div>
 				<div class="ml-12">
 					<h3 class="tracking-wider text-white uppercase">Explore</h3>
-					<ul role="list" class="mt-6 space-y-4">
+					<ul role="list" class="mt-6 space-y-3">
 						<li v-for="item in navigation.explore" :key="item.name">
 							<a
 								:href="item.href"
@@ -22,9 +24,9 @@
 						</li>
 					</ul>
 				</div>
-				<div class="mt-10 md:mt-0 ml-6">
+				<div class="mt-10 ml-6 md:mt-0">
 					<h3 class="tracking-wider text-white uppercase">Music</h3>
-					<ul role="list" class="mt-6 space-y-4">
+					<ul role="list" class="mt-6 space-y-3">
 						<li v-for="item in navigation.music" :key="item.name">
 							<a
 								:href="item.href"
@@ -36,7 +38,7 @@
 				</div>
 				<div class="ml-2">
 					<h3 class="tracking-wider text-white uppercase">Artists</h3>
-					<ul role="list" class="mt-6 space-y-4">
+					<ul role="list" class="mt-6 space-y-3">
 						<li v-for="item in navigation.artists" :key="item.name">
 							<a
 								:href="item.href"
@@ -48,7 +50,7 @@
 				</div>
 				<div class="mt-10 md:mt-0">
 					<h3 class="tracking-wider text-white uppercase">Records</h3>
-					<ul role="list" class="mt-6 space-y-4">
+					<ul role="list" class="mt-6 space-y-3">
 						<li v-for="item in navigation.records" :key="item.name">
 							<a
 								:href="item.href"
@@ -60,9 +62,11 @@
 				</div>
 			</div>
 			<div
-				class="mt-16 border-t border-white pt-8 sm:mt-20 md:flex md:items-center md:justify-between lg:mt-24"
+				class="flex items-center justify-between pt-8 mt-16 border-t border-white"
 			>
-				<div class="flex space-x-6 md:order-2">
+				<p class="flex-none text-white basis-52">Privacy Policy</p>
+				<p class="flex-none text-white">Term and Conditions</p>
+				<div class="flex justify-end flex-1 gap-5">
 					<a
 						v-for="item in navigation.social"
 						:key="item.name"
@@ -70,21 +74,22 @@
 						class="text-white"
 					>
 						<span class="sr-only">{{ item.name }}</span>
-						<component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+						<component :is="item.icon" class="w-6 h-6" aria-hidden="true" />
 					</a>
 				</div>
-				<p class="mt-8 text-xs leading-5 text-white">Privacy Policy</p>
-				<p class="mt-8 text-xs leading-5 text-white md:order-1 md:mt-0">
-					Term and Conditions
-				</p>
 			</div>
 		</div>
 	</footer>
 </template>
 
-<script setup>
+<script lang="ts">
 import { defineComponent, h } from "vue";
+export default defineComponent({
+	name: "Footer",
+});
+</script>
 
+<script setup lang="ts">
 const navigation = {
 	explore: [
 		{ name: "About Us", href: "#" },

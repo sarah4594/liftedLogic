@@ -1,19 +1,19 @@
 <template>
-	<div class="flex py-28 bg-white">
-		<div class="basis-1/2 py-12 pl-12 pr-8">
+	<div
+		class="flex flex-col-reverse gap-8 px-0 pt-8 sm:px-12 sm:flex-row sm:py-16 lg:py-32 bg-white"
+	>
+		<div class="flex-1">
 			<img
-				class="max-h-[454px] max-w-[568px]"
+				class="flex-1 object-cover w-full h-full"
 				src="/Images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp"
 				alt="Brent Faiyaz"
 			/>
 		</div>
-		<div class="pt-12">
-			<h1 class="text-4xl text-blue font-bold tracking-wide max-w-72">
+		<div class="flex-1 px-8 sm:px-0">
+			<h2 class="text-2xl sm:text-4xl/10 font-bold text-brand-blue">
 				Brent Faiyaz, So Far Gone
-			</h1>
-			<p
-				className="text-base text-gray basis-1/2 flex items-center pr-32 pt-12"
-			>
+			</h2>
+			<p className="mt-8 mr-8 text-gray">
 				Faiyaz began uploading his music onto SoundCloud in 2014 and moved from
 				his hometown Columbia, Maryland to Charlotte, North Carolina before
 				ultimately settling in Los Angeles, California to further his music

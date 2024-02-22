@@ -2,7 +2,7 @@
 	<div
 		class="flex bg-[url('/Images/harry-swales-0l0KjNoAfAk-unsplash.jpg')] bg-center bg-cover lg:bg-none"
 	>
-		<div class="flex flex-row bg-white">
+		<div class="flex flex-row bg-white bg-opacity-85">
 			<div class="basis-1/2 border-b border-gray/10 py-12 px-12">
 				<h2 class="leading-7 text-4xl text-blue font-bold">Get in Touch</h2>
 				<p class="pt-8 leading-6 text-gray tracking-wide">

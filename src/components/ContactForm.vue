@@ -10,8 +10,16 @@
 					Recording artist, now available on Apple Music & Spotify.
 				</p>
 
-				<div class="py-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-					<div class="sm:col-span-3">
+				<form
+					class="py-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2"
+					method="post"
+					@submit="
+						(e) => {
+							e.preventDefault();
+						}
+					"
+				>
+					<div class="sm:col-span-1">
 						<label
 							for="first-name"
 							class="block py-1 text-sm leading-6 text-gray"
@@ -29,7 +37,7 @@
 						</div>
 					</div>
 
-					<div class="sm:col-span-3">
+					<div>
 						<label
 							for="last-name"
 							class="block py-1 text-sm leading-6 text-gray"
@@ -47,7 +55,7 @@
 						</div>
 					</div>
 
-					<div class="sm:col-span-3">
+					<div>
 						<label for="email" class="block py-1 text-sm leading-6 text-gray"
 							>Email address</label
 						>
@@ -63,7 +71,7 @@
 						</div>
 					</div>
 
-					<div class="sm:col-span-3">
+					<div>
 						<label for="country" class="block py-1 text-sm leading-6 text-gray"
 							>Country</label
 						>
@@ -100,7 +108,7 @@
 							<Button>Learn More</Button>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 
 			<div class="basis-1/2 hidden lg:block">

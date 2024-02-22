@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from "tailwindcss/defaultTheme";
 export default {
 	content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
 	theme: {
@@ -18,7 +19,20 @@ export default {
 			black: "#000000",
 			white: "#ffffff",
 		},
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["Inter", ...defaultTheme.fontFamily.sans],
+			},
+			animation: {
+				breathe: "breathe 3s ease-in-out infinite",
+			},
+			keyframes: {
+				breathe: {
+					"0%, 100%": { transform: "scale(1.10)" },
+					"50%": { transform: "scale(1)" },
+				},
+			},
+		},
 	},
 	plugins: [],
 };

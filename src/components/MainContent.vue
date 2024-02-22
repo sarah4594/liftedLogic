@@ -1,5 +1,5 @@
 <template>
-	<div class="flex pt-32 bg-white">
+	<div class="flex py-28 bg-white">
 		<div class="basis-1/2 py-12 pl-12 pr-8">
 			<img
 				class="max-h-[454px] max-w-[568px]"
@@ -8,11 +8,11 @@
 			/>
 		</div>
 		<div class="pt-12">
-			<h1 class="text-4xl text-blue font-semibold max-w-72">
+			<h1 class="text-4xl text-blue font-bold tracking-wide max-w-72">
 				Brent Faiyaz, So Far Gone
 			</h1>
 			<p
-				className="text-base text-gray basis-1/2 flex items-center pr-44 pt-12"
+				className="text-base text-gray basis-1/2 flex items-center pr-32 pt-12"
 			>
 				Faiyaz began uploading his music onto SoundCloud in 2014 and moved from
 				his hometown Columbia, Maryland to Charlotte, North Carolina before

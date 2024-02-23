@@ -10,14 +10,14 @@
 		>
 			<div class="ml-32">
 				<h1 class="text-6xl font-bold text-white">A.M. Paradox</h1>
-				<p class="text-white text-lg mt-10 w-[60%]">
+				<p class="hidden sm:block text-white text-lg sm:mt-10 w-[60%]">
 					Christopher Brent Wood, better known by his stage name Brent Faiyaz,
 					is an American singer and record producer. He released his debut
 					project, an extended play entitled A.M. Paradox, in 2016.
 				</p>
 				<div class="flex items-center gap-6 mt-6">
 					<button
-						class="inline-flex items-center justify-center w-16 h-16 text-black bg-white rounded-full hover:bg-gray-light hover:text-red-500"
+						class="inline-flex items-center justify-center w-16 h-16 text-black bg-white rounded-full hover:bg-gray-light hover:bg-blue-light"
 					>
 						<svg
 							class="flex-none w-6 h-6"

@@ -96,7 +96,7 @@
 							></textarea>
 						</div>
 						<div class="mt-8">
-							<Button>Learn More</Button>
+							<Button type="submit">Learn More</Button>
 						</div>
 					</div>
 				</form>

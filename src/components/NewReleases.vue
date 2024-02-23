@@ -1,15 +1,21 @@
 <template>
-	<div class="pt-16 bg-gray-light pb-14">
-		<h2 class="text-4xl font-bold text-center text-blue">New Releases</h2>
-		<p class="text-lg text-gray mt-8 w-[45%] m-auto">
+	<div class="pt-8 sm:pt-16 bg-brand-background pb-14">
+		<h2 class="text-3xl font-bold text-center sm:text-4xl text-blue">
+			New Releases
+		</h2>
+		<p
+			class="text-lg text-gray mt-8 w-full px-4 sm:px-0 sm:w-[70%] lg:w-[45%] sm:mx-auto"
+		>
 			New albums every single month, check out the newest & best from Snyder
 			Recording artist, now available on Apple Music & Spotify.
 		</p>
-		<div class="mt-24 h-96">
+		<div class="mt-8 sm:mt-16 lg:mt-24">
 			<Carousel ref="myCarousel" :breakpoints="breakpoints">
 				<Slide v-for="album in albums" :key="album.id">
-					<div class="bg-white px-6 py-10 mx-4 w-[570px]">
-						<div class="flex w-full gap-6 text-left opacity-40">
+					<div class="bg-white px-6 py-6 sm:py-10 mx-4 w-[570px]">
+						<div
+							class="flex flex-col w-full gap-6 text-left duration-200 sm:flex-row opacity-40 transform-opacity"
+						>
 							<img
 								:src="album.image"
 								alt="Album"
@@ -27,10 +33,15 @@
 						</div>
 					</div>
 				</Slide>
+				<template #addons>
+					<div class="mt-8 sm:hidden">
+						<Pagination />
+					</div>
+				</template>
 			</Carousel>
 
 			<div>
-				<div class="flex justify-center gap-6 mt-16">
+				<div class="justify-center hidden gap-6 mt-16 sm:flex">
 					<button
 						class="inline-flex items-center justify-center w-16 h-16 transition-colors duration-200 rounded-full bg-blue-light hover:bg-blue hover:text-white"
 						@click="onPrev"

@@ -1,5 +1,5 @@
 <template>
-	<div class="pt-8 sm:pt-16 bg-brand-background pb-14">
+	<div class="pt-8 sm:pt-16 bg-gray-light pb-14">
 		<h2 class="text-3xl font-bold text-center sm:text-4xl text-blue">
 			New Releases
 		</h2>

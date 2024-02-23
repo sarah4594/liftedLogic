@@ -1,64 +1,67 @@
 <template>
 	<footer class="bg-blue" aria-labelledby="footer-heading">
 		<h2 id="footer-heading" class="sr-only">Footer</h2>
-		<div class="px-12 pt-16 pb-8">
-			<div class="xl:grid xl:grid-cols-5 xl:gap-8">
-				<div class="grid gap-8 pr-10 xl:col-span-1">
-					<div class="flex flex-col text-white">
-						<img src="/Logos/Logo-White.svg" alt="Logo-white" />
-						<p class="pt-6 tracking-wider">
-							8521 W Fairfax Rd Los Angeles, CA 90210
-						</p>
-						<p class="pt-6 tracking-wider">(909) 505 4302</p>
+		<div class="p-8 sm:px-12 sm:pt-16 sm:pb-8">
+			<div class="flex flex-col sm:flex-row w-full text-white">
+				<div class="flex gap-4 text-white sm:flex-col sm:mr-8 lg:mr-32">
+					<img src="/Logos/Logo-White.svg" alt="Logo-white" />
+					<p class="pt-6 tracking-wider">
+						8521 W Fairfax Rd Los Angeles, CA 90210
+					</p>
+					<p class="pt-6 tracking-wider">(909) 505 4302</p>
+				</div>
+
+				<div
+					class="grid grid-cols-2 mt-8 gap-y-16 sm:mt-0 sm:flex-1 sm:grid-cols-4 lg:gap-8"
+				>
+					<div class="ml-12">
+						<h3 class="tracking-wider text-white uppercase">Explore</h3>
+						<ul role="list" class="mt-6 space-y-3">
+							<li v-for="item in navigation.explore" :key="item.name">
+								<a
+									:href="item.href"
+									class="leading-6 text-white tracking-wider"
+									>{{ item.name }}</a
+								>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div class="ml-12">
-					<h3 class="tracking-wider text-white uppercase">Explore</h3>
-					<ul role="list" class="mt-6 space-y-3">
-						<li v-for="item in navigation.explore" :key="item.name">
-							<a
-								:href="item.href"
-								class="leading-6 text-white tracking-wider"
-								>{{ item.name }}</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="mt-10 ml-6 md:mt-0">
-					<h3 class="tracking-wider text-white uppercase">Music</h3>
-					<ul role="list" class="mt-6 space-y-3">
-						<li v-for="item in navigation.music" :key="item.name">
-							<a
-								:href="item.href"
-								class="leading-6 text-white tracking-wider"
-								>{{ item.name }}</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="ml-2">
-					<h3 class="tracking-wider text-white uppercase">Artists</h3>
-					<ul role="list" class="mt-6 space-y-3">
-						<li v-for="item in navigation.artists" :key="item.name">
-							<a
-								:href="item.href"
-								class="leading-6 text-white tracking-wider"
-								>{{ item.name }}</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="mt-10 md:mt-0">
-					<h3 class="tracking-wider text-white uppercase">Records</h3>
-					<ul role="list" class="mt-6 space-y-3">
-						<li v-for="item in navigation.records" :key="item.name">
-							<a
-								:href="item.href"
-								class="leading-6 text-white tracking-wider"
-								>{{ item.name }}</a
-							>
-						</li>
-					</ul>
+					<div class="ml-12">
+						<h3 class="tracking-wider text-white uppercase">Music</h3>
+						<ul role="list" class="mt-6 space-y-3">
+							<li v-for="item in navigation.music" :key="item.name">
+								<a
+									:href="item.href"
+									class="leading-6 text-white tracking-wider"
+									>{{ item.name }}</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="ml-12">
+						<h3 class="tracking-wider text-white uppercase">Artists</h3>
+						<ul role="list" class="mt-6 space-y-3">
+							<li v-for="item in navigation.artists" :key="item.name">
+								<a
+									:href="item.href"
+									class="leading-6 text-white tracking-wider"
+									>{{ item.name }}</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="ml-12">
+						<h3 class="tracking-wider text-white uppercase">Records</h3>
+						<ul role="list" class="mt-6 space-y-3">
+							<li v-for="item in navigation.records" :key="item.name">
+								<a
+									:href="item.href"
+									class="leading-6 text-white tracking-wider"
+									>{{ item.name }}</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div

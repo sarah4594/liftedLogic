@@ -5,10 +5,11 @@
 			<div class="flex flex-col sm:flex-row w-full text-white">
 				<div class="flex gap-4 text-white sm:flex-col sm:mr-8 lg:mr-32">
 					<img src="/Logos/Logo-White.svg" alt="Logo-white" />
-					<p class="pt-6 tracking-wider">
-						8521 W Fairfax Rd Los Angeles, CA 90210
+					<p class="sm:pt-6">
+						8521 W Fairfax Rd<br />
+						Los Angeles, CA 90210<br />
+						(909) 505 4302
 					</p>
-					<p class="pt-6 tracking-wider">(909) 505 4302</p>
 				</div>
 
 				<div

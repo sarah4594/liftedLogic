@@ -69,33 +69,31 @@
 								class="block w-full border-0 py-4 pl-4 text-blue shadow-sm ring-1 ring-inset ring-gray placeholder:text-gray focus:ring-2 focus:ring-inset focus:ring-blue sm:leading-6"
 							/>
 						</div>
-					</div>
-
-					<div>
-						<label for="country" class="block py-1 text-sm leading-6 text-gray"
-							>Country</label
-						>
-						<div>
-							<select
-								id="country"
-								name="country"
-								autocomplete="country-name"
-								class="block w-full border-0 py-4 pl-4 text-gray shadow-sm ring-1 ring-inset ring-gray focus:text-blue focus:ring-2 focus:ring-inset focus:ring-blue sm:max-w-xs sm:leading-6"
+						<div class="flex-1">
+							<label for="reason" class="block text-gray"
+								>Reason for Contacting</label
 							>
-								<option disabled selected class="text-gray-light">
-									Selct One
-								</option>
-								<option>United States</option>
-								<option>Canada</option>
-								<option>Mexico</option>
+							<select
+								id="reason"
+								name="reason"
+								autocomplete="reason"
+								placeholder="Select One"
+								required
+								class="block w-full border-0 py-4 pl-4 text-gray shadow-sm ring-1 ring-inset ring-gray placeholder:text-gray focus:ring-1 focus:ring-inset focus:ring-blue sm:leading-6"
+							>
+								<option value="" selected disabled>Select One</option>
+								<option>Want more info</option>
+								<option>Need support</option>
+								<option>Billing</option>
 							</select>
 						</div>
 					</div>
+
 					<div class="col-span-full">
-						<label for="about" class="block py-1 text-sm leading-6 text-gray"
-							>Message (optional)</label
-						>
-						<div>
+						<div class="w-full">
+							<label for="message" class="block text-gray"
+								>Message (Optional)</label
+							>
 							<textarea
 								id="message"
 								name="message"

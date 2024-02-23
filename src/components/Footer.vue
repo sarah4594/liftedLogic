@@ -66,10 +66,12 @@
 				</div>
 			</div>
 			<div
-				class="flex items-center justify-between pt-8 mt-16 border-t border-white"
+				class="flex items-center justify-between sm:pt-8 pt-4 mt-16 border-t border-white"
 			>
-				<p class="flex-none text-white basis-52">Privacy Policy</p>
-				<p class="flex-none text-white">Term and Conditions</p>
+				<div class="sm:flex sm:flex-row sm:items-center">
+					<p class="flex-none text-white basis-52">Privacy Policy</p>
+					<p class="flex-none text-white pt-2 sm:pt-0">Term and Conditions</p>
+				</div>
 				<div class="flex justify-end flex-1 gap-5">
 					<a
 						v-for="item in navigation.social"

@@ -17,7 +17,7 @@
 				</p>
 				<div class="flex items-center gap-6 mt-6">
 					<button
-						class="inline-flex items-center justify-center w-16 h-16 text-black bg-white rounded-full hover:bg-gray-light hover:bg-blue-light"
+						class="inline-flex items-center justify-center w-16 h-16 text-black bg-white rounded-full hover:bg-blue-light hover:bg-blue-light"
 					>
 						<svg
 							class="flex-none w-6 h-6"

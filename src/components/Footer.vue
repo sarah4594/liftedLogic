@@ -13,9 +13,9 @@
 				</div>
 
 				<div
-					class="grid grid-cols-2 mt-8 gap-y-16 sm:mt-0 sm:flex-1 sm:grid-cols-4 lg:gap-8"
+					class="grid grid-cols-2 ml-4 sm:ml-0 mt-8 gap-y-16 sm:mt-0 sm:flex-1 lg:grid-cols-4 lg:gap-8"
 				>
-					<div class="ml-12">
+					<div class="">
 						<h3 class="tracking-wider text-white uppercase">Explore</h3>
 						<ul role="list" class="mt-6 space-y-3">
 							<li v-for="item in navigation.explore" :key="item.name">
@@ -27,7 +27,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="ml-12">
+					<div class="">
 						<h3 class="tracking-wider text-white uppercase">Music</h3>
 						<ul role="list" class="mt-6 space-y-3">
 							<li v-for="item in navigation.music" :key="item.name">
@@ -39,7 +39,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="ml-12">
+					<div class="">
 						<h3 class="tracking-wider text-white uppercase">Artists</h3>
 						<ul role="list" class="mt-6 space-y-3">
 							<li v-for="item in navigation.artists" :key="item.name">
@@ -51,7 +51,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="ml-12">
+					<div class="">
 						<h3 class="tracking-wider text-white uppercase">Records</h3>
 						<ul role="list" class="mt-6 space-y-3">
 							<li v-for="item in navigation.records" :key="item.name">
@@ -66,13 +66,13 @@
 				</div>
 			</div>
 			<div
-				class="flex items-center justify-between sm:pt-8 pt-4 mt-16 border-t border-white"
+				class="flex flex-col sm:flex-row items-center justify-between sm:pt-8 pt-4 mt-16 border-t border-white"
 			>
-				<div class="sm:flex sm:flex-row sm:items-center">
-					<p class="flex-none text-white basis-52">Privacy Policy</p>
+				<div class="flex sm:flex-row flex-col items-center">
+					<p class="flex-none text-white sm:basis-52">Privacy Policy</p>
 					<p class="flex-none text-white pt-2 sm:pt-0">Term and Conditions</p>
 				</div>
-				<div class="flex justify-end flex-1 gap-5">
+				<div class="flex justify-end flex-1 gap-5 pt-4 sm:pt-0">
 					<a
 						v-for="item in navigation.social"
 						:key="item.name"

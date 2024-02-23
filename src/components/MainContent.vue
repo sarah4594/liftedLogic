@@ -10,10 +10,10 @@
 			/>
 		</div>
 		<div class="flex-1 px-8 sm:px-0">
-			<h2 class="text-2xl sm:text-4xl/10 font-bold text-brand-blue">
+			<h2 class="text-2xl sm:text-4xl/10 font-bold text-blue mr-0 lg:mr-64">
 				Brent Faiyaz, So Far Gone
 			</h2>
-			<p className="mt-8 mr-8 text-gray">
+			<p className="mt-8 mr-8 lg:mr-24 text-gray">
 				Faiyaz began uploading his music onto SoundCloud in 2014 and moved from
 				his hometown Columbia, Maryland to Charlotte, North Carolina before
 				ultimately settling in Los Angeles, California to further his music

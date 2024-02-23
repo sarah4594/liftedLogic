@@ -8,8 +8,8 @@
 		<div
 			class="absolute top-0 left-0 flex flex-col justify-center w-full h-full bg-black bg-opacity-35"
 		>
-			<div class="ml-32">
-				<h1 class="text-6xl font-bold text-white">A.M. Paradox</h1>
+			<div class="ml-8 sm:ml-32">
+				<h1 class="text-4xl sm:text-6xl font-bold text-white">A.M. Paradox</h1>
 				<p class="hidden sm:block text-white text-lg sm:mt-10 w-[60%]">
 					Christopher Brent Wood, better known by his stage name Brent Faiyaz,
 					is an American singer and record producer. He released his debut

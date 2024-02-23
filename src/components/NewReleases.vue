@@ -6,12 +6,7 @@
 			Recording artist, now available on Apple Music & Spotify.
 		</p>
 		<div class="mt-24 h-96">
-			<Carousel
-				ref="myCarousel"
-				:items-to-show="2"
-				:wrap-around="true"
-				:autoplay="0"
-			>
+			<Carousel ref="myCarousel" :breakpoints="breakpoints">
 				<Slide v-for="album in albums" :key="album.id">
 					<div class="bg-white px-6 py-10 mx-4 w-[570px]">
 						<div class="flex w-full gap-6 text-left opacity-40">
@@ -104,6 +99,21 @@ import { ref } from "vue";
 type CarouselNav = {
 	prev: () => void;
 	next: () => void;
+};
+
+const breakpoints = {
+	0: {
+		itemsToShow: 1.2,
+		wrapAround: true,
+		snapAlign: "start",
+		autoplay: 0,
+	},
+	640: {
+		itemsToShow: 2,
+		wrapAround: true,
+		itemsToScroll: 1,
+		snapAlign: "center",
+	},
 };
 
 const myCarousel = ref<CarouselNav>();
